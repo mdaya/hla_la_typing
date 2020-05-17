@@ -14,10 +14,8 @@ all_out_file_name=${sample_id}_output.txt
 out_gz_name=${sample_id}_hla_results.tar.gz
 
 #Link graph files
-graph_dir=`dirname $graph_files`
-target_dir=/usr/local/bin/HLA-LA/graphs/PRG_MHC_GRCh38_withIMGT
+target_dir=/usr/local/bin/HLA-LA/graphs/
 ln -s $graph_dir $target_dir
-ls -alh $target_dir
 
 #Type HLA
 /usr/local/bin/HLA-LA/src/HLA-LA.pl --BAM $cram_file_name --graph PRG_MHC_GRCh38_withIMGT --sampleID $sample_id --samtools_T $ref_fasta_file_name --maxThread $nr_threads
