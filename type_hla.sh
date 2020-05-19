@@ -18,7 +18,7 @@ target_dir=/usr/local/bin/HLA-LA/graphs/
 ln -s $graph_dir $target_dir
 
 #Type HLA
-/usr/local/bin/HLA-LA/src/HLA-LA.pl --BAM $cram_file_name --graph PRG_MHC_GRCh38_withIMGT --sampleID $sample_id --samtools_T $ref_fasta_file_name --maxThread $nr_threads
+/usr/local/bin/HLA-LA/src/HLA-LA.pl --BAM $cram_file_name --graph PRG_MHC_GRCh38_withIMGT --sampleID $sample_id --samtools_T $ref_fasta_file_name --maxThread $nr_threads 1>&2
 
 #Create output
 cp /usr/local/bin/HLA-LA/working/${sample_id}/hla/R1_bestguess_G.txt $best_out_file_name
