@@ -23,5 +23,5 @@ ln -s $graph_dir $target_dir
 #Create output
 cp /usr/local/bin/HLA-LA/working/${sample_id}/hla/R1_bestguess_G.txt $best_out_file_name
 cp /usr/local/bin/HLA-LA/working/${sample_id}/hla/R1_bestguess.txt $all_out_file_name
-tar -zvcf $out_gz_name /usr/local/bin/HLA-LA/working/${sample_id}/hla
+tar -zvcf $out_gz_name /usr/local/bin/HLA-LA/working/${sample_id}
 
