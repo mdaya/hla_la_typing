@@ -10,5 +10,5 @@ https://github.com/DiltheyLab/HLA-LA 15 May 2020 and zipped up, and used
 instead of the v1.01 archived release, in order to get the fix for the
 --samtools_T flag
 
-At the bottom of the Dockerfile, commands to copy the two calling bash scripts to
-/usr/local/bin, were added
+At the bottom of the Dockerfile, aa command to copy the calling bash scripts to
+/usr/local/bin, was added
