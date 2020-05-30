@@ -22,7 +22,7 @@ Full path name of the CRAM file on which HLA typing should be run. A correspondi
 
 ### ref_fasta_file_name
 
-The reference fasta file used originally to create the CRAM file
+The reference fasta file used originally to create the CRAM file. A corresoponding index file should also be available.
 
 ### graph_dir
 
