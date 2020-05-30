@@ -1,6 +1,6 @@
 A docker environment and calling script to run HLA-LA on Seven Bridges on Biodata catalyst.
 
-The docker build can be pulled from https://quay.io/repository/mdaya/hla\_la\_typing
+The docker build can be pulled from https://quay.io/repository/mdaya/hla_la_typing
 
 To run HLA-typing, use the following command from the docker instance:
 
@@ -45,7 +45,7 @@ rm PRG_MHC_GRCh38_withIMGT.tar.gz
 #Index the graph
 ../bin/HLA-LA --action prepareGraph --PRG_graph_dir ../graphs/PRG_MHC_GRCh38_withIMGT
 #Run the pipeline on one sample in order to create indexes for the files in
-#graphs/PRG_MHC_GRCh38_withIMGT/extendedReferenceGenome, then create tarbile
+#graphs/PRG_MHC_GRCh38_withIMGT/extendedReferenceGenome, then create tarball
 #using the command below
 tar -czvf PRG_MHC_GRCh38_withIMGT.tar.gz ./PRG_MHC_GRCh38_withIMGT 
 ```
