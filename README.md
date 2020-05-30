@@ -30,7 +30,7 @@ The graph directory needed by HLA-LA to perform HLA typing. See notes below.
 
 ## Important notes
 
-* Use the SBG Decompressor CWL1.0 to extract the required graph file archive PRG\_MHC\_GRCh38\_withIMGT.tar.gz
+* Use the SBG Decompressor CWL1.0 to extract the required graph file archive PRG\_MHC\_GRCh38\_withIMGT.tar.gz, with the flatten_output argument set to false
 * Recommended AWS compute instance: r5.2xlarge with 150GB attached storage (at least 64 GB memory is required for the pipeline); 8 CPU cores are available on this instance
 
 ## Creation of the graph file archive
