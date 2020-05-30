@@ -82,9 +82,7 @@ RUN sed -i 's@\$(BAMTOOLS_PATH)/lib64@\$(BAMTOOLS_PATH)/lib@' makefile
 RUN make all BOOST_PATH=/usr/include/boost BAMTOOLS_PATH=/usr/local/bin/bamtools-2.5.1
 
 # install calling hla*la bash scripts
-COPY extract_graph_ref.sh /usr/local/bin
 COPY type_hla.sh /usr/local/bin
-RUN chmod a+x /usr/local/bin/extract_graph_ref.sh
 RUN chmod a+x /usr/local/bin/type_hla.sh
 
 # modify paths.ini for hla*la
