@@ -1,6 +1,7 @@
 class: Workflow
 cwlVersion: v1.0
 label: HLA LA workflow
+doc: Workflow for calling HLA alleles from a whole genome sequence CRAM file, using HLA-LA
 $namespaces:
   sbg: https://sevenbridges.com
 
