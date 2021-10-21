@@ -47,8 +47,7 @@ RUN rm -rf /usr/local/bin/picard-tools-${picard_version}/
 
 # install bwa
 WORKDIR /usr/local/bin/
-RUN mkdir -p /usr/local/bin/ \
-  && curl -SL https://github.com/lh3/bwa/archive/v${bwa_version}.zip \
+RUN curl -SL https://github.com/lh3/bwa/archive/v${bwa_version}.zip \
   >  v${bwa_version}.zip
 RUN unzip v${bwa_version}.zip && rm -f v${bwa_version}.zip
 RUN cd /usr/local/bin/bwa-${bwa_version} && make
